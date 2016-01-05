@@ -91,7 +91,7 @@ $(document).ready(function() {
       $.each(ids, function(k, v) {
         //console.log(v);
         console.log('...');
-        $.getJSON("http://api.songkick.com/api/3.0/artists/" + v[0] + "/calendar.json?apikey=NyHcJHQPyD0gM5Ec&jsoncallback=?", function(data) {
+        $.getJSON("https://api.songkick.com/api/3.0/artists/" + v[0] + "/calendar.json?apikey=NyHcJHQPyD0gM5Ec&jsoncallback=?", function(data) {
           //console.log(data);
           $.each(data.resultsPage.results, function(key, evt) {
             //console.log(key);
