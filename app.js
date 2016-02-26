@@ -8,17 +8,6 @@ var app = express();
 var port = 3000;
 
 
-
-
-
-//  By default upon authentication, the access_token is saved, but you can add it like
-// client.setToken(access_token);
-
-
-
-
-
-
 /*
  * Use Handlebars for templating
  */

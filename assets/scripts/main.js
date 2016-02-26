@@ -12,9 +12,13 @@ var user_data = {
 var events = [];
 $(document).ready(function() {
 
-  
+  var loadingStatus = $('.loadingCopy p');
 
   buildList = function() {
+    console.log('building list. (This is not optimized yet. May take awhile if you follow a lot of people.)');
+    $('.startText').hide();
+    $('.animation-07, .loadingCopy').show();
+    loadingStatus.html('Fetching the list... <br /> (This is not optimized yet. May take awhile if you follow a lot of people.)');
       var user = localStorage.getItem('userInfo');
       $.getJSON(user + clientID, function(me) {
       console.log(me);
@@ -42,6 +46,7 @@ $(document).ready(function() {
         console.log(user_data.SC_artists.length)
         var profileLimit = 0;
         var hitCount = 0;
+        loadingStatus.html('Found '+user_data.SC_artists.length+' artists you follow.');
         $.each(user_data.SC_artists, function(ke, va) {
           $.getJSON("https://api.soundcloud.com/users/" + va[0] + "/web-profiles" + clientID , function(profile) {
             var pic = va[1];
@@ -68,11 +73,12 @@ $(document).ready(function() {
 
             });
             profileLimit++;
-            
+            loadingStatus.html(profileLimit + ' / ' + user_data.SC_artists.length);
             // After it's gone through all the artists and collected which ones have tour attached.
             if (profileLimit == user_data.SC_artists.length) {
               // run sonkick function
-              console.log('limit hit')
+              console.log('Artist list complete');
+              loadingStatus.html('Checking their tours dates...');
                 //console.log(user_data.songkick);
                 //console.log(user_data.bandpage);
                 console.log(user_data.songkick);
@@ -87,10 +93,11 @@ $(document).ready(function() {
 
       var limit = 0;
       console.log(ids);
+      loadingStatus.html(ids.length + ' artists have tour dates...');
       console.log('Looking up SongKick dates');
       $.each(ids, function(k, v) {
         //console.log(v);
-        console.log('...');
+        
         $.getJSON("https://api.songkick.com/api/3.0/artists/" + v[0] + "/calendar.json?apikey=NyHcJHQPyD0gM5Ec&jsoncallback=?", function(data) {
           //console.log(data);
           $.each(data.resultsPage.results, function(key, evt) {
@@ -127,15 +134,16 @@ $(document).ready(function() {
           });
 
         }).done(function() {
+          loadingStatus.html(k + ' / ' + ids.length);
           if (k == ids.length - 1) {
             console.log('DONE! Here is the list of dates in order');
             //console.log(events);
-            $.each(events, function(k, v) {
+            // $.each(events, function(k, v) {
 
-              //console.log(v.concert_venue_coord);
-              v.miles = getDistances(v.concert_venue_coord);
+            //   //console.log(v.concert_venue_coord);
+            //   v.miles = getDistances(v.concert_venue_coord);
 
-            });
+            // });
             events.sort(function(a, b) {
               // Turn your strings into dates, and then subtract them
               // to get a value that is either negative, positive, or zero.
@@ -207,7 +215,7 @@ $(document).ready(function() {
         // first layout
         var anEvent = '<div class="col-sm-12 anEvent" data-miles="' + v.miles + '">' + concertString + '<div class="row">' +
           '<div class="col-sm-2 col-xs-4 avatar" data-toggle="collapse" href="#' + collapseID + '" aria-expanded="true" aria-controls="' + collapseID + '">' +
-          '<div class="captionContainer"><img src="' + v.concert_avatar + '" alt="' + v.artist_name + '"><div class="caption">More Info</div></div></div>' +
+          '<div class="captionContainer"><img src="' + v.concert_avatar + '" alt="' + v.artist_name + '"><div class="caption_disabled"></div></div></div>' +
           '<div class="col-sm-10 col-xs-8 info"><div class="row"><div class="col-sm-8 who ">' +
           '<h1>' + v.artist_name + '</h1>' + concert + location + '<h3 class="where_venue"><a target="_blank" href="' + v.concert_venue_uri + '">' + v.concert_venueName + '</a></h3></div>' +
           '<div class="col-sm-1 col-xs-6 where">' +
@@ -355,14 +363,16 @@ $(document).ready(function() {
     if (localStorage.userToken) {
 
 
-    
+   
     buildList();
   } else {
-
+    console.log('sign in')
+   // buildList();
+   $('.animation-07').hide();
   }
     //SIGN IN
-  document.getElementById('btn-login').addEventListener('click', function() {
-    lock.show(function(err, profile, token) {
+    $('.btn-login').on('click', function(){
+      lock.show(function(err, profile, token) {
       if (err) {
         // Error callback
         console.error("Something went wrong: ", err);
@@ -383,14 +393,17 @@ $(document).ready(function() {
         buildList();
       }
     });
-  });
+    });
+  // document.getElementById('btn-login').addEventListener('click', function() {
+    
+  // });
   // SIGN OUT
   $('#signOut').click(function(e) {
     localStorage.removeItem('userToken');
     localStorage.removeItem('userInfo');
     window.location.href = "/";
   });
-  getGeoInfo();
+  
 });
 
 ;(function(global, undefined) {
