@@ -1,8 +1,53 @@
-<div class="container">
+<div class="container main" role="main">
 
-    <h1>Your Node Express App</h1>
-   <button id="btn-login">Login</button>
-   <button id="signOut">Sign Out</button>
-   <div id="nick"></id>
+   
+   
    <div class="tourList"></div>
+   <div class="row">
+		<div class="col-md-12">
+		</div>
+	</div>
+	
+	<div class="row ">
+		<div class="col-md-9 ">
+			<!-- <div class="row">
+				<ul class="sub-nav">
+					<li>Stream</li>
+					<li>Explore</li>
+					<li class="active">Experience</li>
+				</ul>
+				
+				<div class="line col-md-12"></div>
+			</div> -->
+			<div class="row tourList">
+				<div class="col-sm-12 none">Sorry - No shows are nearby.</div>
+			</div>
+		</div>
+		<div class="col-md-3 ">
+			<div class="row userInfo">
+				<div class="col-md-4"><div class="user_avatar"><img src="" alt=""></div></div>
+				<div class="col-md-8" style="padding-left:0;"><div class="welcome"></div></div>
+			</div>
+			
+			
+			<div class="filters">
+				<h1>Filter:</h1>
+				<h2 class="location">Your Location: <br/><span class="cityLocation"></span></h2>
+				<div class="dropdown">
+					Distance: 
+					<button class="btn btn-default dropdown-toggle" type="button" id="milesFilter" data-toggle="dropdown" aria-expanded="true">
+					<span class="text">25 Miles</span>
+					<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="milesFilter">
+						<li role="presentation"><a class="miles_filter" role="menuitem" tabindex="-1" href="#" data-miles="25">25 Miles</a></li>
+						<li role="presentation"><a class="miles_filter" role="menuitem" tabindex="-1" href="#" data-miles="50">50 Miles</a></li>
+						<li role="presentation"><a class="miles_filter" role="menuitem" tabindex="-1" href="#" data-miles="100">100 Miles</a></li>
+						<li role="presentation"><a class="miles_filter" role="menuitem" tabindex="-1" href="#" data-miles="250">250 Miles</a></li>
+						<li role="presentation"><a class="miles_filter" role="menuitem" tabindex="-1" href="#" data-miles="500">500 Miles</a></li>
+						<li role="presentation"><a class="miles_filter" role="menuitem" tabindex="-1" href="#" data-miles="100000">Any Miles</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 </div>
