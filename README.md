@@ -1,4 +1,4 @@
-## Soundcloud Tour App (Really early Alpha)
+## Soundcloud Tour Experience (Really early Alpha)
 
 I use Soundcloud a lot. I follow a lot of artists and I wanted to know when they were going on tour. I was surprised Soundcloud didn't have any sort of built in feature for this... So I started to build Soundcloud Tour.
 
@@ -15,3 +15,6 @@ To do list (as of right now)
 3. Filter by Location (region maybe?).
 4. Filter by Festival / non-festival
 5. Brand this thing?
+
+Demo:
+https://pure-sierra-6678.herokuapp.com/
