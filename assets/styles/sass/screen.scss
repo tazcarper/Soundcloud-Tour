@@ -125,19 +125,21 @@ body {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	.user_avatar {
-	
+	float: left;
+	width:35px;
 	img {
 		width:100%;
-		padding-top:3px;
+		padding-top:5px;
 	}
 
 }
 .welcome {
 		font-size:16px;
 		font-weight: 700;
-		padding-top: 10px;
-		margin: 0;
-		padding: 0;
+		margin-top: 10px;
+		margin-right: 20px;
+		display: inline-block;
+		float: left;
 		color: white;
 	}
 }
@@ -490,7 +492,7 @@ body {
 	.green-200 {
 		background-color: #7da84d;
 	}
-	.animation-07 {
+	.animation {
 		display: none;
 	}
 	.cube {

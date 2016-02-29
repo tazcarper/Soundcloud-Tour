@@ -37,16 +37,16 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         
-                        
+                        <li><div class="userInfo">
+                            <div class="user_avatar"><img src="" alt=""></div>
+                            <div class="welcome"></div>
+                        </div></li>
                         <button id="btn-login" class="btn btn-default btn-login">Login</button>
                         
                         <button id="signOut" class="btn btn-default">Sign Out</button>
                         <div id="nick"></id>
                         </li>
-                        <li><div class="userInfo">
-                            <div class="col-md-4"><div class="user_avatar"><img src="" alt=""></div></div>
-                            <div class="col-md-8" style="padding-left:0;"><div class="welcome"></div></div>
-                        </div></li>
+                        
                     </ul>
                     </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
@@ -57,7 +57,7 @@
                         <p>A work in progress by <a href="http://tazcarper.com">Taz Carper</a>.</p>
                         <button class="btn btn-default btn-login">Connect with Soundcloud</button>
                     </div>
-                    <div class="animation-07">
+                    <div class="animation">
                         <div class="arc">
                             <div class="arc-cube"></div>
                             
@@ -70,7 +70,15 @@
                 </div>
                 {{{ body }}}
                 <footer>
-                    Footer Content
+                <div class="container">
+                   <div class="row">
+                    <div class="col-sm-12">
+                        Powered by: <img src="http://www.songkick.com/blog/wp-content/uploads/2012/06/songkick_logo.png" alt="Sonkkick" class="songkick">
+                    </div>
+                </div> 
+                </div>
+                
+                  
                 </footer>
                 <script src="https://cdn.auth0.com/js/lock-7.12.min.js"></script>
                 <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
