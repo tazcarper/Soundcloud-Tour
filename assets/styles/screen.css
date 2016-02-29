@@ -12546,34 +12546,35 @@ body, html {
   height: 100%;
 }
 
-/* line 42, sass/screen.scss */
+/* line 43, sass/screen.scss */
 h1 {
   font-size: 18px;
   margin-top: 0;
 }
 
-/* line 46, sass/screen.scss */
+/* line 47, sass/screen.scss */
 h3 {
   margin-top: 0;
   font-size: 16px;
 }
 
-/* line 50, sass/screen.scss */
+/* line 51, sass/screen.scss */
 body {
   background: #f2f2f2;
+  padding-top: 52px;
 }
 
-/* line 53, sass/screen.scss */
+/* line 55, sass/screen.scss */
 .container {
   background: white;
 }
 
-/* line 57, sass/screen.scss */
+/* line 59, sass/screen.scss */
 .main {
   padding-top: 60px;
 }
 
-/* line 60, sass/screen.scss */
+/* line 62, sass/screen.scss */
 #signIn {
   margin-top: 7px;
   background: #f50;
@@ -12581,13 +12582,13 @@ body {
   border-color: transparent;
 }
 
-/* line 66, sass/screen.scss */
+/* line 68, sass/screen.scss */
 .navbar-brand {
   color: white !important;
   margin-left: 0;
 }
 
-/* line 70, sass/screen.scss */
+/* line 72, sass/screen.scss */
 .navbar {
   background: black;
   border-bottom: 1px solid white;
@@ -12598,23 +12599,23 @@ body {
   width: 100%;
   z-index: 9999;
 }
-/* line 79, sass/screen.scss */
+/* line 81, sass/screen.scss */
 .navbar .container {
   background: black;
 }
-/* line 82, sass/screen.scss */
+/* line 84, sass/screen.scss */
 .navbar .btn {
   margin-top: 10px;
 }
 
-/* line 86, sass/screen.scss */
+/* line 88, sass/screen.scss */
 .logoText {
   position: absolute;
   top: 17px;
   padding-left: 10px;
 }
 
-/* line 91, sass/screen.scss */
+/* line 93, sass/screen.scss */
 .sub-nav {
   padding: 0;
   margin: 0;
@@ -12622,7 +12623,7 @@ body {
   float: left;
   margin-left: 20px;
 }
-/* line 98, sass/screen.scss */
+/* line 100, sass/screen.scss */
 .sub-nav li {
   list-style: none;
   color: black;
@@ -12631,18 +12632,18 @@ body {
   float: left;
   margin-right: 25px;
 }
-/* line 105, sass/screen.scss */
+/* line 107, sass/screen.scss */
 .sub-nav li.active {
   color: #f50;
 }
 
-/* line 110, sass/screen.scss */
+/* line 112, sass/screen.scss */
 .dropdown {
   float: right;
   margin-top: 25px;
 }
 
-/* line 114, sass/screen.scss */
+/* line 116, sass/screen.scss */
 .line {
   height: 1px;
   background: #f2f2f2;
@@ -12651,37 +12652,40 @@ body {
   padding-left: 20px;
 }
 
-/* line 122, sass/screen.scss */
+/* line 124, sass/screen.scss */
 .userInfo {
-  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-/* line 126, sass/screen.scss */
+/* line 129, sass/screen.scss */
 .userInfo .user_avatar img {
   width: 100%;
   padding-top: 3px;
 }
-/* line 132, sass/screen.scss */
+/* line 135, sass/screen.scss */
 .userInfo .welcome {
   font-size: 16px;
   font-weight: 700;
+  padding-top: 10px;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
-/* line 142, sass/screen.scss */
+/* line 147, sass/screen.scss */
 .anEvent {
   background: white;
   padding: 15px;
   padding-left: 20px;
   border-bottom: 1px solid #f2f2f2;
 }
-/* line 148, sass/screen.scss */
+/* line 153, sass/screen.scss */
 .anEvent h1 {
   font-size: 24px;
   margin-bottom: 1px;
   font-weight: 700;
 }
-/* line 153, sass/screen.scss */
+/* line 158, sass/screen.scss */
 .anEvent h2 {
   font-size: 14px;
   margin-top: 3px;
@@ -12689,36 +12693,36 @@ body {
   margin-bottom: 0;
   padding-bottom: 2px;
 }
-/* line 160, sass/screen.scss */
+/* line 165, sass/screen.scss */
 .anEvent h3 {
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 1px;
   margin-bottom: 0;
 }
-/* line 165, sass/screen.scss */
+/* line 170, sass/screen.scss */
 .anEvent h3.where_venue {
   font-size: 13px;
 }
-/* line 167, sass/screen.scss */
+/* line 172, sass/screen.scss */
 .anEvent h3.where_venue a {
   color: #406E8E;
 }
-/* line 172, sass/screen.scss */
+/* line 177, sass/screen.scss */
 .anEvent h4 {
   text-decoration: underline;
   font-size: 14px;
   margin: 0 0 5px 0;
   padding: 0;
 }
-/* line 178, sass/screen.scss */
+/* line 183, sass/screen.scss */
 .anEvent h1, .anEvent h2, .anEvent h3, .anEvent h4 {
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
-/* line 187, sass/screen.scss */
+/* line 192, sass/screen.scss */
 .anEvent.hideThis {
   opacity: 0;
   display: none;
@@ -12727,24 +12731,24 @@ body {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/* line 195, sass/screen.scss */
+/* line 200, sass/screen.scss */
 .anEvent img {
   border: 1px solid #ddd;
   cursor: pointer;
 }
-/* line 199, sass/screen.scss */
+/* line 204, sass/screen.scss */
 .anEvent .locationText {
   margin-top: 10px;
   font-size: 13px;
   font-weight: 700;
 }
 @media (min-width: 768px) {
-  /* line 199, sass/screen.scss */
+  /* line 204, sass/screen.scss */
   .anEvent .locationText {
     margin-top: 15px;
   }
 }
-/* line 207, sass/screen.scss */
+/* line 212, sass/screen.scss */
 .anEvent .caption {
   color: white;
   font-size: 10px;
@@ -12761,7 +12765,7 @@ body {
   opacity: .9;
   pointer-events: none;
 }
-/* line 223, sass/screen.scss */
+/* line 228, sass/screen.scss */
 .anEvent .avatar {
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -12771,27 +12775,27 @@ body {
   padding-right: 0;
 }
 @media (min-width: 768px) {
-  /* line 223, sass/screen.scss */
+  /* line 228, sass/screen.scss */
   .anEvent .avatar {
     max-width: none;
     padding-right: 20px;
   }
 }
-/* line 234, sass/screen.scss */
+/* line 239, sass/screen.scss */
 .anEvent .avatar .captionContainer {
   position: relative;
   overflow: hidden;
 }
-/* line 238, sass/screen.scss */
+/* line 243, sass/screen.scss */
 .anEvent .avatar .captionContainer:hover > .caption {
   bottom: 0;
   left: 0;
 }
-/* line 244, sass/screen.scss */
+/* line 249, sass/screen.scss */
 .anEvent .avatar img {
   width: 100%;
 }
-/* line 249, sass/screen.scss */
+/* line 254, sass/screen.scss */
 .anEvent .moreInfo {
   width: 100%;
   float: left;
@@ -12799,18 +12803,18 @@ body {
   color: black;
   display: none;
 }
-/* line 256, sass/screen.scss */
+/* line 261, sass/screen.scss */
 .anEvent .tickets {
   margin-top: 0px;
 }
-/* line 258, sass/screen.scss */
+/* line 263, sass/screen.scss */
 .anEvent .tickets h3 {
   font-size: 13px;
   font-weight: 700;
   margin-top: 0px;
 }
 @media (min-width: 768px) {
-  /* line 258, sass/screen.scss */
+  /* line 263, sass/screen.scss */
   .anEvent .tickets h3 {
     margin-top: 5px;
     font-size: 18px;
@@ -12818,21 +12822,21 @@ body {
   }
 }
 @media (min-width: 992px) {
-  /* line 258, sass/screen.scss */
+  /* line 263, sass/screen.scss */
   .anEvent .tickets h3 {
     font-size: 22px;
   }
 }
-/* line 271, sass/screen.scss */
+/* line 276, sass/screen.scss */
 .anEvent .tickets .concert_timeing {
   display: none;
 }
-/* line 274, sass/screen.scss */
+/* line 279, sass/screen.scss */
 .anEvent .tickets a {
   right: 15px;
   bottom: 0;
 }
-/* line 278, sass/screen.scss */
+/* line 283, sass/screen.scss */
 .anEvent .tickets a .btn {
   margin-top: 10px;
   background: #f50;
@@ -12843,32 +12847,32 @@ body {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 278, sass/screen.scss */
+  /* line 283, sass/screen.scss */
   .anEvent .tickets a .btn {
     font-size: 12px;
   }
 }
 @media (min-width: 768px) {
-  /* line 274, sass/screen.scss */
+  /* line 279, sass/screen.scss */
   .anEvent .tickets a {
     position: static;
   }
 }
-/* line 295, sass/screen.scss */
+/* line 300, sass/screen.scss */
 .anEvent .info {
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
-/* line 301, sass/screen.scss */
+/* line 306, sass/screen.scss */
 .anEvent .who {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 307, sass/screen.scss */
+/* line 312, sass/screen.scss */
 .anEvent .bigList {
   height: 0;
   -webkit-transition: all .3s ease-in-out;
@@ -12877,49 +12881,49 @@ body {
   transition: all .3s ease-in-out;
   opacity: 0;
 }
-/* line 317, sass/screen.scss */
+/* line 322, sass/screen.scss */
 .anEvent .big h1 {
   font-size: 33px;
 }
-/* line 320, sass/screen.scss */
+/* line 325, sass/screen.scss */
 .anEvent .big h2 {
   font-size: 18px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 325, sass/screen.scss */
+/* line 330, sass/screen.scss */
 .anEvent .big .captionContainer {
   position: relative;
   overflow: hidden;
 }
-/* line 329, sass/screen.scss */
+/* line 334, sass/screen.scss */
 .anEvent .big .captionContainer:hover > .caption {
   bottom: -30px;
   left: 0;
 }
-/* line 335, sass/screen.scss */
+/* line 340, sass/screen.scss */
 .anEvent .big .avatar {
   width: 33.33333333%;
 }
-/* line 341, sass/screen.scss */
+/* line 346, sass/screen.scss */
 .anEvent .big .bigList {
   opacity: 1;
   height: auto;
 }
-/* line 348, sass/screen.scss */
+/* line 353, sass/screen.scss */
 .anEvent .big .tickets h3 {
   margin-top: 8px;
 }
-/* line 352, sass/screen.scss */
+/* line 357, sass/screen.scss */
 .anEvent .big .bigList {
   display: block;
   margin-top: 35px;
 }
-/* line 355, sass/screen.scss */
+/* line 360, sass/screen.scss */
 .anEvent .big .bigList h4 {
   font-size: 18px;
 }
-/* line 360, sass/screen.scss */
+/* line 365, sass/screen.scss */
 .anEvent .type {
   position: absolute;
   top: 0;
@@ -12929,7 +12933,7 @@ body {
   background: #ff5500;
   border-bottom: 0px solid #bfbfbf;
 }
-/* line 368, sass/screen.scss */
+/* line 373, sass/screen.scss */
 .anEvent .type p {
   color: white;
   position: absolute;
@@ -12941,18 +12945,18 @@ body {
   top: 49px;
   text-transform: uppercase;
 }
-/* line 379, sass/screen.scss */
+/* line 384, sass/screen.scss */
 .anEvent .type.festival {
   background: blue;
   background: #b33c00;
 }
-/* line 384, sass/screen.scss */
+/* line 389, sass/screen.scss */
 .anEvent .expandedContent {
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 388, sass/screen.scss */
+/* line 393, sass/screen.scss */
 .anEvent .expandedContent h4 {
   font-size: 20px;
   font-weight: 700;
@@ -12961,18 +12965,18 @@ body {
   margin-bottom: 5px;
 }
 
-/* line 397, sass/screen.scss */
+/* line 402, sass/screen.scss */
 .filters {
   padding-top: 33px;
 }
-/* line 399, sass/screen.scss */
+/* line 404, sass/screen.scss */
 .filters h2 {
   font-size: 16px;
   margin-top: 0;
   padding-top: 0;
 }
 
-/* line 405, sass/screen.scss */
+/* line 410, sass/screen.scss */
 .none {
   display: none;
   padding: 100px 0;
@@ -12980,7 +12984,7 @@ body {
   font-size: 30px;
 }
 
-/* line 413, sass/screen.scss */
+/* line 418, sass/screen.scss */
 .loading {
   opacity: 1;
   transition: opacity .5s ease-in-out;
@@ -12993,7 +12997,7 @@ body {
   z-index: 999;
   text-align: center;
 }
-/* line 425, sass/screen.scss */
+/* line 430, sass/screen.scss */
 .loading .loadingCopy {
   position: absolute;
   top: 50%;
@@ -13001,14 +13005,14 @@ body {
   width: 100%;
   display: none;
 }
-/* line 432, sass/screen.scss */
+/* line 437, sass/screen.scss */
 .loading .btn {
   margin: 0 auto;
   text-align: center;
   margin-top: 25px;
   font-size: 30px;
 }
-/* line 438, sass/screen.scss */
+/* line 443, sass/screen.scss */
 .loading h1 {
   margin-top: 150px;
   text-align: center;
@@ -13053,22 +13057,22 @@ body {
     border-width: 30px;
   }
 }
-/* line 482, sass/screen.scss */
+/* line 487, sass/screen.scss */
 .green-100 {
   background-color: #88b257;
 }
 
-/* line 485, sass/screen.scss */
+/* line 490, sass/screen.scss */
 .green-200 {
   background-color: #7da84d;
 }
 
-/* line 488, sass/screen.scss */
+/* line 493, sass/screen.scss */
 .animation-07 {
   display: none;
 }
 
-/* line 491, sass/screen.scss */
+/* line 496, sass/screen.scss */
 .cube {
   position: absolute;
   bottom: 50%;
@@ -13079,12 +13083,12 @@ body {
   margin-top: 0;
 }
 
-/* line 500, sass/screen.scss */
+/* line 505, sass/screen.scss */
 .cube-2d {
   background-color: white;
 }
 
-/* line 503, sass/screen.scss */
+/* line 508, sass/screen.scss */
 .arc {
   position: absolute;
   top: 30%;
@@ -13095,7 +13099,7 @@ body {
   overflow: hidden;
 }
 
-/* line 512, sass/screen.scss */
+/* line 517, sass/screen.scss */
 .arc-cube {
   position: absolute;
   bottom: -70px;

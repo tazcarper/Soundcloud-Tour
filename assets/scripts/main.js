@@ -1,5 +1,5 @@
 var lock = new Auth0Lock('5MaAedksdNlpmHsfj8vd7e40XOoMLgyz', 'tazcarper.auth0.com');
-var clientID = '?client_id=1bc3231f89579a25c82de840167ecd14';
+var clientID = '?client_id=036adb80f5958eaf1386ede738617c6a';
 var user_data = {
   SC_artists: [],
   songkick: [],
@@ -164,7 +164,7 @@ $(document).ready(function() {
 
     var showList = function(list) {
       var limit = 0;
-
+      $('#btn-login').hide();
 
 
       $.each(list, function(k, v) {
@@ -215,7 +215,7 @@ $(document).ready(function() {
         // first layout
         var anEvent = '<div class="col-sm-12 anEvent" data-miles="' + v.miles + '">' + concertString + '<div class="row">' +
           '<div class="col-sm-2 col-xs-4 avatar" data-toggle="collapse" href="#' + collapseID + '" aria-expanded="true" aria-controls="' + collapseID + '">' +
-          '<div class="captionContainer"><img src="' + v.concert_avatar + '" alt="' + v.artist_name + '"><div class="caption_disabled"></div></div></div>' +
+          '<div class="captionContainer"><img src="' + v.concert_avatar + '" alt="' + v.artist_name + '"><div class="caption disabled"></div></div></div>' +
           '<div class="col-sm-10 col-xs-8 info"><div class="row"><div class="col-sm-8 who ">' +
           '<h1>' + v.artist_name + '</h1>' + concert + location + '<h3 class="where_venue"><a target="_blank" href="' + v.concert_venue_uri + '">' + v.concert_venueName + '</a></h3></div>' +
           '<div class="col-sm-1 col-xs-6 where">' +
