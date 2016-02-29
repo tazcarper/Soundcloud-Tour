@@ -22,9 +22,7 @@ $(document).ready(function() {
       console.log(retrievedObject);
       checkSongKick(retrievedObject);
       user_data = JSON.parse(localStorage.getItem('soundcloudUserInfo'));
-      $('.welcome').text(user_data.name);
-      $('.user_avatar img').attr('src', user_data.avatar);
-      $('#btn-login').hide();
+      userInfoUpdate();
     } else {
 
 
@@ -262,7 +260,7 @@ $(document).ready(function() {
       limit++;
 
       $('.cityLocation').text(user_data.city);
-
+      userInfoUpdate();
       
 
       if (limit == list.length) {
@@ -278,6 +276,12 @@ $(document).ready(function() {
       }
     });
 
+  }
+
+  var userInfoUpdate = function (){
+    $('.welcome').text(user_data.name);
+      $('.user_avatar img').attr('src', user_data.avatar);
+      $('#btn-login').hide();
   }
 
 
@@ -332,10 +336,6 @@ $(document).ready(function() {
     return month + ' ' + day;
   }
 
-  // to do!
-  signOut = function() {
-
-  }
 
   getDistances = function(venue_coord) {
 
@@ -409,10 +409,14 @@ $(document).ready(function() {
   // document.getElementById('btn-login').addEventListener('click', function() {
 
   // });
+
   // SIGN OUT
   $('#signOut').click(function(e) {
     localStorage.removeItem('userToken');
     localStorage.removeItem('userInfo');
+    localStorage.removeItem('soundcloudUserInfo');
+    localStorage.removeItem('songkickArtists');
+    localStorage.clear();
     window.location.href = "/";
   });
 
